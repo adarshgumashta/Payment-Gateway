@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Payment Gateway</string>
+    <string name="internet_not_connected">No Internet Connected</string>
+    <string name="error_403">Accessing the page or resource you were trying to reach is absolutely forbidden.</string>
+    <string name="error_500">Something went wrong.</string>
+    <string name="error_default">Something Error Occurred.</string>
+</resources>

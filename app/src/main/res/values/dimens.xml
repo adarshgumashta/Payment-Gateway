@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="payment_vendor_label_size">18sp</dimen>
+    <dimen name="payment_vendor_label_margin_left">18dp</dimen>
+    <dimen name="no_internet_connected">18sp</dimen>
+    <dimen name="cardview_margin_start">2dp</dimen>
+    <dimen name="relative_layout_margin_start">5dp</dimen>
+    <dimen name="cardview_elevation">5dp</dimen>
+    <dimen name="cardview_corner_radius">8dp</dimen>
+    <dimen name="relative_layout_padding">10dp</dimen>
+</resources>

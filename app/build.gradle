@@ -1,0 +1,83 @@
+plugins {
+    id 'com.android.application'
+    id 'dagger.hilt.android.plugin'
+}
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.3"
+    defaultConfig {
+        applicationId "com.payoneer.paymentsapplication"
+        minSdkVersion 16
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        buildConfigField 'String', 'BASE_URL', project.BASE_URL
+        buildConfigField 'String', 'API_URL', project.API_URL
+    }
+    buildFeatures {
+        viewBinding true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+
+    implementation "androidx.appcompat:appcompat:${rootProject.appcompat_version}"
+    implementation "com.google.android.material:material:${rootProject.material_version}"
+    implementation "androidx.constraintlayout:constraintlayout:${rootProject.constraintlayout_version}"
+    testImplementation "junit:junit:${rootProject.junit_version}"
+    androidTestImplementation "androidx.test.ext:junit:${rootProject.ext_junit_version}"
+    androidTestImplementation "androidx.test.espresso:espresso-core:${rootProject.espresso_version}"
+
+    /* Retrofit Dependency*/
+    implementation "com.squareup.retrofit2:retrofit:${rootProject.retrofit_version}"
+    implementation "com.squareup.retrofit2:converter-gson:${rootProject.retrofit_converter_version}"
+
+    /* OkHttpLogging Interceptor Dependency*/
+    implementation "com.squareup.okhttp3:logging-interceptor:${rootProject.okHttp_logging_interceptor_version}"
+
+    /*RxJava Dependency*/
+    implementation "io.reactivex.rxjava3:rxjava:${rootProject.rxjava_version}"
+    implementation "io.reactivex.rxjava3:rxandroid:${rootProject.rxandroid_version}"
+    implementation "com.github.akarnokd:rxjava3-retrofit-adapter:${rootProject.rxjava_retrofit_adapter_version}"
+
+    /*Lombok Dependency*/
+    implementation "org.projectlombok:lombok:${rootProject.lombok_version}"
+    annotationProcessor "org.projectlombok:lombok:${rootProject.lombok_version}"
+
+    /*Glide Dependency*/
+    implementation("com.github.bumptech.glide:glide:${rootProject.glide_version}@aar") {
+        transitive = true
+    }
+    annotationProcessor "com.github.bumptech.glide:compiler:${rootProject.glide_version}"
+
+    /*ViewModel and LifeCycle Extension Dependency*/
+    implementation "androidx.lifecycle:lifecycle-viewmodel:${rootProject.lifecycle_viewmodel_version}"
+    implementation "androidx.lifecycle:lifecycle-extensions:${rootProject.lifecycle_extension_version}"
+
+    /*Hilt Dependency*/
+    implementation "com.google.dagger:hilt-android:${rootProject.dagger_hilt_version}"
+    annotationProcessor "com.google.dagger:hilt-compiler:${rootProject.dagger_hilt_version}"
+
+    /*Mockito Library*/
+    testImplementation "org.mockito:mockito-core:$project.mockito_core_version"
+    testImplementation("com.squareup.okhttp3:mockwebserver:$project.mockito_web_version")
+
+    /*Truth Library*/
+    testImplementation "com.google.truth:truth:$project.truth_version"
+
+
+}
