@@ -1,19 +1,15 @@
+# Payment-Gateway
 An Android application displaying the list of payment gateways.
 
-# Payment-Gateway
-Mockito 
-Truth
-
 # Libraries Used 
-ViewModel
-LiveData
-Dagger Hilt
-Mockito 
-Truth
-Retrofit
-RxJava3 , RxAndroid 
-Glide
-
+ViewModel<br />
+LiveData<br />
+Dagger Hilt<br />
+Mockito <br />
+Truth<br />
+Retrofit<br />
+RxJava3 , RxAndroid <br />
+Glide<br />
 
 # ScreenShots
 
