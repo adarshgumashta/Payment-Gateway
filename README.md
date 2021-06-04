@@ -12,7 +12,6 @@ RxJava3 , RxAndroid <br />
 Glide<br />
 
 # ScreenShots
+<img src="https://user-images.githubusercontent.com/5154404/120753582-039ec580-c529-11eb-9bf7-ae6c1becf9e2.jpg" width="380" height="600">
 
-![Payment Gatway](https://user-images.githubusercontent.com/5154404/120753582-039ec580-c529-11eb-9bf7-ae6c1becf9e2.jpg)
-
-![No Internet Connected](https://user-images.githubusercontent.com/5154404/120753593-07324c80-c529-11eb-8e19-5ff2a22610de.jpg)
+<img src="https://user-images.githubusercontent.com/5154404/120753593-07324c80-c529-11eb-8e19-5ff2a22610de.jpg" width="380" height="600">
